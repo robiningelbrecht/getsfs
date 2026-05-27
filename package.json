@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i app.css -o dist/app.min.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.3.0"
+  }
+}
