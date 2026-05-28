@@ -239,5 +239,51 @@
             </div>
         </div>
     </section>
+    <section id="install" class="max-w-6xl mx-auto px-4 sm:px-5 py-14 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">Run it with Docker.</h2>
+                <p class="mt-3 text-gray-600 max-w-md">If you can run a Docker container, you can run Statistics for Strava. Plug in your Strava app credentials, hit go, and watch your years of data sync.</p>
+                <div class="mt-6 flex flex-wrap items-center gap-3">
+                    <a href="https://docs.getsfs.app" class="inline-flex items-center gap-2 text-sm font-semibold bg-strava-orange text-white px-5 py-3 rounded-md hover:bg-orange-600 transition">
+                        Read the docs
+                        <svg class="size-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://hub.docker.com/r/robiningelbrecht/strava-statistics" class="inline-flex items-center gap-2 text-sm font-semibold text-gray-700 px-5 py-3 rounded-md border border-gray-300 hover:border-gray-400 hover:bg-gray-50">
+                        <svg class="size-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 11.27a3.6 3.6 0 0 0-2-1.07c-.6-1.1-1.85-1.7-3.05-1.7l-.05.3c-.2 1.4.1 2.7 1 3.55-.45.25-1.2.5-2.15.5H1.85c-.5 2.6.95 5.95 4.05 7.2 2.5 1 5.45 1.05 8 .15 3.1-1.1 4.95-3.6 5.85-6.05.85.1 2.2-.1 2.7-1.7-.1-.05-.4-.15-.45-1.18zM6.6 11h-2v-2h2v2zm2.7 0h-2v-2h2v2zm2.7 0h-2v-2h2v2zm2.7 0h-2v-2h2v2zM9.3 8.3h-2v-2h2v2zm2.7 0h-2v-2h2v2zm2.7 0h-2v-2h2v2zM12 5.6h-2v-2h2v2z"/></svg>
+                        Docker Hub
+                    </a>
+                </div>
+                <p class="mt-3 text-xxs text-gray-500">
+                    Also published to
+                    <a href="https://github.com/robiningelbrecht/statistics-for-strava/pkgs/container/statistics-for-strava"
+                       target="_blank" rel="noopener" class="font-semibold text-gray-700 hover:text-strava-orange transition inline-flex items-center gap-0.5">
+                        GitHub Container Registry
+                        <svg class="size-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </p>
+            </div>
+            <div class="hidden lg:block">
+                <div class="font-mono bg-[#212730] text-gray-200 rounded-[10px] px-4 py-3.5 text-[13px] leading-[1.6] overflow-x-auto whitespace-pre shadow-xl">
+    <span class="text-gray-500"># create a directory for the app</span>
+    $ <span class="text-orange-400">mkdir</span> statistics-for-strava &amp;&amp; <span
+        class="text-orange-400">cd</span> statistics-for-strava
+
+    <span class="text-gray-500"># drop in docker-compose.yml, .env and config.yaml</span>
+    <span class="text-gray-500"># (copy the examples from the docs)</span>
+
+    <span class="text-gray-500"># spin it up</span>
+    $ <span class="text-orange-400">docker</span> compose up
+
+    <span class="text-gray-500"># open the dashboard</span>
+    <span class="text-orange-400">→</span> http://localhost:8080
+                </div>
+                <div class="mt-3 flex items-center justify-end text-xxs text-gray-500">
+                    <a href="https://docs.getsfs.app/#/getting-started/installation"
+                       class="font-semibold text-strava-orange hover:underline">Full instructions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
