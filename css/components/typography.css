@@ -1,0 +1,15 @@
+@layer components {
+    .section-title {
+        @apply text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight;
+    }
+
+    .eyebrow {
+        @apply inline-flex items-center gap-1.5 text-xxs font-bold uppercase tracking-widest
+               text-strava-orange bg-strava-orange-soft px-2.5 py-1 rounded-full;
+    }
+
+    .check-badge {
+        @apply mt-0.5 inline-flex items-center justify-center size-5 rounded-full
+               bg-strava-orange-soft text-strava-orange;
+    }
+}

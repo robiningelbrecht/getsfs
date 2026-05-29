@@ -1,0 +1,22 @@
+@layer components {
+    .window {
+        @apply overflow-hidden rounded-lg border border-gray-200 shadow-2xl bg-white;
+    }
+
+    .window-bar {
+        @apply flex items-center gap-3 px-3.5 py-2.5 border-b border-gray-200
+               bg-gradient-to-b from-gray-50 to-gray-100/70;
+    }
+
+    .window-dots {
+        @apply flex gap-1.5;
+
+        & > span {
+            @apply size-2.5 rounded-full nth-[1]:bg-[#ff5f57] nth-[2]:bg-[#febc2e] nth-[3]:bg-[#28c840];
+        }
+    }
+
+    .window-url {
+        @apply flex-1 min-w-0 flex items-center justify-center gap-1.5 text-[11px] font-semibold text-gray-400;
+    }
+}

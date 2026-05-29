@@ -1,0 +1,9 @@
+@layer components {
+    .preview-dialog {
+        @apply m-auto w-full max-w-3xl p-0 bg-white rounded-xl shadow-2xl overflow-hidden;
+
+        &::backdrop {
+            @apply bg-gray-900/70 backdrop-blur-sm;
+        }
+    }
+}

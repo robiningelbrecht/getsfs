@@ -1,0 +1,38 @@
+@layer components {
+    .btn {
+        @apply inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-semibold
+               transition-all duration-150 hover:-translate-y-0.5 active:translate-y-0;
+    }
+
+    .btn-primary {
+        @apply bg-strava-orange text-white hover:bg-orange-600;
+    }
+
+    .btn-outline {
+        @apply text-gray-800 border border-gray-300 hover:border-strava-orange/50 hover:bg-gray-50;
+    }
+
+    .btn-outline-muted {
+        @apply text-gray-700 border border-gray-300 hover:border-gray-400 hover:bg-gray-50;
+    }
+
+    .btn-dark {
+        @apply bg-gray-900 text-white hover:bg-gray-800;
+    }
+
+    .btn-discord {
+        @apply text-white bg-[#5865F2] hover:bg-[#4752C4];
+    }
+
+    .btn-nav {
+        @apply items-center gap-2 rounded-md px-3 py-2 text-xs font-semibold;
+    }
+
+    .btn-coffee {
+        @apply text-gray-900 bg-[#FFDD00] hover:bg-[#FFD500] transition;
+    }
+
+    .btn-nav-dark {
+        @apply bg-gray-900 text-white hover:bg-gray-800;
+    }
+}
