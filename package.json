@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i app.css -o dist/app.min.css --minify"
+    "tailwind": "npx @tailwindcss/cli -i app.css -o dist/app.min.css --minify",
+    "build": "npm run tailwind && bash scripts/cachebust.sh"
   },
   "devDependencies": {
     "tailwindcss": "^4.3.0"
